@@ -92,6 +92,16 @@ section{max-width:1040px;margin:0 auto;padding:90px 20px}
 .info p.free{font-size:clamp(56px,8vw,96px);line-height:1.15;color:var(--coral)}
 .info p.note{font-size:clamp(15px,1.8vw,19px);color:var(--sub)}
 .info .card{display:flex;flex-direction:column;justify-content:center}
+/* 自己紹介 */
+.about{text-align:center;max-width:760px;margin:0 auto}
+.about .nm{display:block;font-weight:900;font-size:clamp(44px,7vw,80px);line-height:1.2;color:var(--mint)}
+.about .tag{font-weight:900;font-size:clamp(20px,2.6vw,30px);margin-top:6px}
+.tools{display:flex;justify-content:center;gap:clamp(12px,2.4vw,26px);margin:22px 0 8px}
+.tools figure{width:clamp(64px,9vw,96px)}
+.tools img{width:100%;height:auto;display:block;filter:drop-shadow(0 4px 0 var(--ink))}
+.tools figcaption{font-size:clamp(11px,1.3vw,14px);color:var(--sub);margin-top:8px;line-height:1.3}
+.about .txt{font-weight:700;font-size:clamp(16px,2vw,20px);line-height:1.9;margin-top:18px}
+.about .fade:nth-child(2){transition-delay:.15s}.about .fade:nth-child(3){transition-delay:.3s}.about .fade:nth-child(4){transition-delay:.45s}
 footer{text-align:center;color:var(--sub);font-size:13px;padding:30px 16px 40px}
 #lb{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;z-index:50;cursor:zoom-out;padding:16px}
 #lb img{max-width:100%;max-height:100%}
@@ -106,7 +116,7 @@ footer{text-align:center;color:var(--sub);font-size:13px;padding:30px 16px 40px}
   .sns{gap:12px}.sns span{padding:6px 16px 6px 10px}
   .vgrid{grid-template-columns:1fr;max-width:320px;margin:0 auto}
   .grid,.info{grid-template-columns:1fr}
-  section{padding:64px 16px}
+  section{padding:64px 16px;scroll-margin-top:56px}
   .card{padding:20px}
   .client{width:104px}.client img{width:90px;height:90px}
 }
@@ -117,7 +127,7 @@ footer{text-align:center;color:var(--sub);font-size:13px;padding:30px 16px 40px}
 <div class="floats" id="floats"></div>
 
 <header>
-  <a href="#works" data-tab="clips">実績</a><a href="#price">料金</a><a class="req" href="#request">ご依頼</a>
+  <a href="#works" data-tab="clips">実績</a><a href="#about">自己紹介</a><a class="req" href="#request">ご依頼</a>
 </header>
 
 <div class="hero">
@@ -166,6 +176,21 @@ footer{text-align:center;color:var(--sub);font-size:13px;padding:30px 16px 40px}
         <div class="work logo"><div class="pic"><img src="img/logo_seishou.png" alt=""></div><em>ロゴ</em><b>青星ダイヤ様</b><p class="desc" data-ph="説明"></p></div>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="fade" id="about">
+  <div class="ttl"><small>ABOUT</small><b>自己紹介</b></div>
+  <div class="card about">
+    <div class="fade"><b class="nm">テンク</b></div>
+    <div class="fade"><p class="tag"><span class="nb">Premiere・Photoshop・</span><span class="nb">Illustrator・After Effects</span><span class="nb">の4刀流です</span></p></div>
+    <div class="fade"><div class="tools">
+      <figure><img src="img/tool_pr.png" alt="Premiere Pro"><figcaption>Premiere Pro</figcaption></figure>
+      <figure><img src="img/tool_ps.png" alt="Photoshop"><figcaption>Photoshop</figcaption></figure>
+      <figure><img src="img/tool_ai.png" alt="Illustrator"><figcaption>Illustrator</figcaption></figure>
+      <figure><img src="img/tool_ae.png" alt="After Effects"><figcaption>After Effects</figcaption></figure>
+    </div></div>
+    <div class="fade"><p class="txt"><span class="nb">フリーランスで、</span><span class="nb">動画編集とSNS運用をしています。</span><br><span class="nb">編集の技術と、</span><span class="nb">SNSで伸ばすための知識の</span><span class="nb">両方を持っているのが強みです。</span></p></div>
   </div>
 </section>
 
